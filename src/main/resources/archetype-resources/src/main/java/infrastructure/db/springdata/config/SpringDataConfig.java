@@ -19,7 +19,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EntityScan(basePackages = "${package}.infrastructure.db.springdata.dbo")
 public class SpringDataConfig {
     @Bean
-    public SampleMapper chordEntityMapper() {
+    public SampleMapper sampleMapper() {
         return new SampleMapper();
     }
 }

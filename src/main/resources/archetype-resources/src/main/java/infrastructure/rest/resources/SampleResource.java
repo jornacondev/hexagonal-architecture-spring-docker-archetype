@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class SampleResource {
     @GetMapping("/greeting")
-    public String getCorrection() {
+    public String getGreeting() {
         return "Hello application";
     }
 }

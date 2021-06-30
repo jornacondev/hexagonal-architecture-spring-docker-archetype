@@ -17,11 +17,11 @@ public class SampleDboRepository implements SampleRepository {
 
     private final SampleMapper sampleMapper;
 
-    private final SpringDataSampleRepository chordRepository;
+    private final SpringDataSampleRepository springDataSampleRepository;
 
     @Autowired
-    public SampleDboRepository(SpringDataSampleRepository chordRepository, SampleMapper sampleMapper) {
-        this.chordRepository = chordRepository;
+    public SampleDboRepository(SpringDataSampleRepository springDataSampleRepository, SampleMapper sampleMapper) {
+        this.springDataSampleRepository = springDataSampleRepository;
         this.sampleMapper = sampleMapper;
     }
 }
